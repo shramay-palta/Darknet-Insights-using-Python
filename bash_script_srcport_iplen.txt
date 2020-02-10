@@ -1,0 +1,94 @@
+
+echo START
+date '+%A %W %Y %X'
+
+
+echo FEB 1 to 15 START
+date '+%A %W %Y %X'
+
+cors-ft-aggregate -i 3600 -f src_port -f protocol -f ip_len -F feb_1to15_hourly2.txt > srcport_iplen_feb_1to15.txt
+python extract_line_srcport_iplen.py srcport_iplen_feb_1to15.txt > extracted_srcport_iplen_feb_1to15.txt
+
+rm srcport_iplen_feb1_to15.txt
+
+echo FEB 1 to 15 done
+
+echo FEB 16 to 28 START
+date '+%A %W %Y %X'
+
+cors-ft-aggregate -i 3600 -f src_port -f protocol -f ip_len -F feb_16to28_hourly2.txt > srcport_iplen_feb_16to28.txt
+python extract_line_srcport_iplen.py srcport_iplen_feb_16to28.txt > extracted_srcport_iplen_feb_16to28.txt
+
+rm srcport_iplen_feb_16to28.txt
+echo FEB 16 to 28 done
+
+echo MARCH 1 TO 10 start
+date '+%A %W %Y %X'
+
+cors-ft-aggregate -i 3600 -f src_port -f protocol -f ip_len -F march_1to10_hourly2.txt > srcport_iplen_march_1to10.txt
+python extract_line_srcport_iplen.py srcport_iplen_march_1to10.txt > extracted_srcport_iplen_march_1to10.txt
+
+rm srcport_iplen_march_1to10.txt
+
+echo MARCH 1 to 10 done
+
+echo MARCH 11 to 20 start
+date '+%A %W %Y %X'
+
+cors-ft-aggregate -i 3600 -f src_port -f protocol -f ip_len -F march_11to20_hourly2.txt > srcport_iplen_march_11to20.txt
+python extract_line_srcport_iplen.py srcport_iplen_march_11to20.txt > extracted_srcport_iplen_march_11to20.txt
+
+rm srcport_iplen_march_11to20.txt
+
+echo MARCH 11 to 20  done
+echo MARCH 21 to 31 start
+date '+%A %W %Y %X'
+
+cors-ft-aggregate -i 3600 -f src_port -f protocol -f ip_len -F march_21to31_hourly2.txt > srcport_iplen_march_21to31.txt
+python extract_line_srcport_iplen.py srcport_iplen_march_21to31.txt > extracted_srcport_iplen_march_21to31.txt
+
+rm srcport_iplen_march_21to31.txt
+
+echo FEB 21 to 31 done
+
+echo APRIL 1 to 10 start
+date '+%A %W %Y %X'
+
+cors-ft-aggregate -i 3600 -f src_port -f protocol -f ip_len -F april_1to10_hourly2.txt > srcport_iplen_april_1to10.txt
+python extract_line_srcport_iplen.py srcport_iplen_april_1to10.txt > extracted_srcport_iplen_april_1to10.txt
+
+rm srcport_iplen_april_1to10.txt
+
+echo April 1 to 10 done
+
+echo APRIL 11 to 20 start
+date '+%A %W %Y %X'
+
+cors-ft-aggregate -i 3600 -f src_port -f protocol -f ip_len -F april_11to20_hourly2.txt > srcport_iplen_april_11to20.txt
+python extract_line_srcport_iplen.py srcport_iplen_april_11to20.txt > extracted_srcport_iplen_april_11to20.txt
+
+rm srcport_iplen_april_11to20.txt
+
+echo April 11 to 20 done
+
+echo APRIL 21 to 30 start
+date '+%A %W %Y %X'
+
+cors-ft-aggregate -i 3600 -f src_port -f protocol -f ip_len -F april_21to30_hourly2.txt > srcport_iplen_april_21to30.txt
+python extract_line_srcport_iplen.py srcport_iplen_april_21to30.txt > extracted_srcport_iplen_april_21to30.txt
+
+rm srcport_iplen_april_21to30.txt
+
+echo April 21 to 30 done
+
+echo MARCH 17 to 23 start
+date '+%A %W %Y %X'
+
+cors-ft-aggregate -i 3600 -f src_port -f protocol -f ip_len -F march_17to23_hourly2.txt > srcport_iplen_march_17to23.txt
+python extract_line_srcport_iplen.py srcport_iplen_march_17to23.txt > extracted_srcport_iplen_march_17to23.txt
+
+rm srcport_iplen_march_17to23.txt
+
+echo March 17 to 23 done
+
+echo ALL DONE
